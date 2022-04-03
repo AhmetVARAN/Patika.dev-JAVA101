@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
-public class Hipotenüs {
+public class UcgenAlan {
 	public static void main(String[] args) {
-		int a,b,c;
+		double a,b,c;
 		Scanner input=new Scanner(System.in);
 		
 		System.out.print("Lütfen üçgenin 1. uzunluğunu girin:");
-		a=input.nextInt();
+		a=input.nextDouble();
 		
 		System.out.print("Lütfen üçgenin 2. uzunluğunu girin:");
-		b=input.nextInt();
+		b=input.nextDouble();
 		
 		System.out.print("Lütfen üçgenin 3. uzunluğunu girin:");
-		c=input.nextInt();
+		c=input.nextDouble();
 		
-		int u=(a+b+c)/2;
-		int alan=u*(u-a)*(u-b)*(u-c);
+		double u=(a+b+c)/2;
+		double alan=u*(u-a)*(u-b)*(u-c);
 		
-		System.out.print("Üçgenin alanı:"+alan);
+		System.out.print("Üçgenin alanı:"+Math.sqrt(alan));
 	}
 }
