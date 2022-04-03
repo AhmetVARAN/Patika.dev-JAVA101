@@ -13,7 +13,7 @@ public class DaireAlan {
 		System.out.println("Dairenin merkez açısını girin:");
 		merkezAci=input.nextDouble();
 		
-		double alan=(pi*(r*r)*merkezAci)/360;
+		double alan=(pi*Math.pow(r, 2)*merkezAci)/360;
 		System.out.println("Dairenin alanı:"+alan);
 				
 
